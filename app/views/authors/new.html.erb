@@ -20,6 +20,8 @@
   </div>
   
   <div class="field <%= ' field_with_errors' if @author.errors[:phone_number].any? %>">
+    <%= label_tag "phone_number", "Phone Number" %>
+    
  
   <%= submit_tag "Create" %>
 <% end %>
